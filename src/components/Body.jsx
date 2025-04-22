@@ -8,8 +8,6 @@ import gmailImg from '../assets/gmail-logo-2561.svg';
 import whatsappImg from '../assets/whatsapp-logo-4456.svg';
 import linkedinImg from '../assets/linkedin-logo-2430.svg';
 import githubImg from '../assets/github-logo-6532.svg';
-import watchIcon from '../assets/eye-plus-outline.svg';
-import sourceIcon from '../assets/source-fork.svg';
 
 export default function Body() {
     const skillsItems = [
@@ -34,7 +32,7 @@ export default function Body() {
 
     return (
         <div className="main__body">
-            <div id="about__me">
+            <div id="about">
                 <div className="main__image">
                     <img src={profilePic} alt="Placeholder" />
                 </div>
@@ -43,9 +41,8 @@ export default function Body() {
                         <h1>Hi. I'm <strong>Orlando Gutierrez</strong>.</h1>
                         <h2>Software developer</h2>
                     </header>
-                        <br />
                         <p><strong>Passionate</strong> about building new stuff<br />and <strong>solving problems</strong> with code.</p>
-                        <a href="#skills" className="button">See my skill set</a>
+                        <a href="#projects" className="intro__button">See my projects</a>
                 </div>
             </div>
             <div id="skills">
@@ -68,11 +65,11 @@ export default function Body() {
                     {projectItems.map((item) => (
                             <div className="project__card" key={item.name}>
                                 <div className='cardContent' >
-                                    <div className='cardTitle'>{item.name}</div>
+                                    <div className='cardTitle'><h2>{item.name}</h2></div>
                                     <div className='cardText'>{item.text}</div>
                                     <div className='cardIcons'>
-                                        <a href={item.hrefdemo}><img src={watchIcon} alt="Watch" className="cardIcon" width="20" /></a>
-                                        <a href={item.hrefrepo}><img src={sourceIcon} alt="Source" className="cardIcon" width="20" /></a>    
+                                        <a className="button" href={item.hrefdemo}>See Demo</a>
+                                        <a className="button" href={item.hrefrepo}>See Code</a>    
                                     </div>
                                 </div>
                             </div>
