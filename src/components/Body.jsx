@@ -42,7 +42,7 @@ export default function Body() {
                         <h2>Software developer</h2>
                     </header>
                         <p><strong>Passionate</strong> about building new stuff<br />and <strong>solving problems</strong> with code.</p>
-                        <a href="#projects" className="intro__button">See my projects</a>
+                        <a href="#projects" className="intro__button">See projects</a>
                 </div>
             </div>
             <div id="skills">
@@ -50,7 +50,7 @@ export default function Body() {
                 <p>Here are some of the technologies I've worked with:</p>
                 <div className="skills__container">
                 {skillsItems.map((item) => (
-                        <a className="skills_card" href={item.href} key={item.name}>
+                        <a className="skills_card" key={item.name}>
                             <h3>{item.name}</h3>
                             <img src={item.img} alt={item.name} className="skills__img" width="80" />
                             <p>{item.text}</p>
