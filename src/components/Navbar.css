@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   background-color: var(--NavFootColor);
+  z-index: 1;
 }
 
 .navbar__left {

@@ -23,11 +23,12 @@ export default function Body() {
         { name: "Github", href: "https://github.com/GtzOrlando/", img: githubImg }]
 
     const projectItems = [
+        { name: "spotify-search-album", hrefdemo: "gtzorlando-spotify-test.netlify.app", hrefrepo: "https://github.com/GtzOrlando/spotify-album-finder", text:"You can search an album for the artist you choose." },
         { name: "online-library", hrefdemo: "https://gtzorlando.github.io/online-library", hrefrepo: "https://github.com/GtzOrlando/online-library", text:"You can add, delete and mark books you have read." },
         { name: "sign-up-form", hrefdemo: "https://gtzorlando.github.io/sign-up-form", hrefrepo: "https://github.com/GtzOrlando/sign-up-form", text:"Basic HTML user authentication with mechanism for data validation." },
         { name: "tic-tac-toe", hrefdemo: "https://gtzorlando.github.io/tic-tac-toe", hrefrepo: "https://github.com/GtzOrlando/tic-tac-toe", text:"Play against the computer or a friend." },
-        { name: "calculator", hrefdemo: "https://gtzorlando.github.io/calculator", hrefrepo: "https://github.com/GtzOrlando/calculator", text:"Not just a simple calculator, but an advanced one which gives you the preview of the answer before pressing enter." },
-        { name: "rock-scissors-paper", hrefdemo: "https://gtzorlando.github.io/rock-scissors-paper", hrefrepo: "https://github.com/GtzOrlando/rock-scissors-paper", text:"Simple game to play to the infinite."},
+        { name: "calculator", hrefdemo: "https://gtzorlando.github.io/calculator", hrefrepo: "https://github.com/GtzOrlando/calculator", text:"An advanced calculator -- shows a preview of the answer before pressing enter." },
+        { name: "rock-scissors-paper", hrefdemo: "https://gtzorlando.github.io/rock-scissors-paper", hrefrepo: "https://github.com/GtzOrlando/rock-scissors-paper", text:"Simple game to play all the times you want."},
         { name: "etch-a-sketch", hrefdemo: "https://gtzorlando.github.io/etch-a-sketch", hrefrepo: "https://github.com/GtzOrlando/etch-a-sketch", text:"Just like the classic game, but with a twist. You can change the size of the grid." },]
 
     return (
@@ -46,7 +47,7 @@ export default function Body() {
                 </div>
             </div>
             <div id="skills">
-                <h2>Skillset</h2>
+                <h1>Skillset</h1>
                 <p>Here are some of the technologies I've worked with:</p>
                 <div className="skills__container">
                 {skillsItems.map((item) => (
@@ -59,7 +60,7 @@ export default function Body() {
                 </div>
             </div>
             <div id="projects">
-                <h2>Projects</h2>
+                <h1>Projects</h1>
                 <p>Here are some of the projects I've worked on:</p>
                 <div className="projects__container">
                     {projectItems.map((item) => (
@@ -68,17 +69,17 @@ export default function Body() {
                                     <div className='cardTitle'><h2>{item.name}</h2></div>
                                     <div className='cardText'>{item.text}</div>
                                     <div className='cardIcons'>
-                                        <a className="button" href={item.hrefdemo}>See Demo</a>
-                                        <a className="button" href={item.hrefrepo}>See Code</a>    
+                                        <a className="button" href={item.hrefdemo} target="_blank" rel="noopener noreferrer">See Demo</a>
+                                        <a className="button" href={item.hrefrepo} target="_blank" rel="noopener noreferrer">See Code</a>    
                                     </div>
                                 </div>
                             </div>
                         ))}
                 </div>
-                <p>More projects real-life based coming soon!</p>
+                <p>Stay tuned — more real-life projects are on the way!</p>
             </div>
             <div id='contact'>
-                <h2>Contact</h2>
+                <h1>Contact</h1>
                 <p>If you want to get in touch, feel free to reach out!</p>
                 <div className='contact__container'>
                     {contactItems.map((item) => (

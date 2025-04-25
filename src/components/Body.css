@@ -83,12 +83,12 @@ body a {
     justify-content: center;
     gap: 20px;
     padding: 5px;
-    max-width: 1600px;
+    max-width: 1400px;
 }
 
 .project__card {
     flex: 1 0 50%;
-    max-width: 400px;
+    max-width: 340px;
     background-color: var(--secondaryColor);
     border-radius: 6px;
     box-shadow: 5px 5px 5px rgba(189, 195, 199, 0.5);
@@ -118,7 +118,7 @@ body a {
     display: flex;
     justify-content: space-around;
     gap: 5px;
-    padding: 20px 30px;
+    padding: 20px;
 }
 
 #contact {
